@@ -4,6 +4,7 @@
   "description": "Manage social/gaming party systems in JavaScript",
   "version": "0.1.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "test": "tsx ./test.ts",
