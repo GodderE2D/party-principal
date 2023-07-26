@@ -1,4 +1,4 @@
-# party-principal
+# [party-principal](https://npmjs.com/package/party-principal) [![Test](https://github.com/GodderE2D/party-principal/actions/workflows/tests.yml/badge.svg)](https://github.com/GodderE2D/party-principal/actions/workflows/tests.yml) [![Publish](https://github.com/GodderE2D/party-principal/actions/workflows/publish.yml/badge.svg)](https://github.com/GodderE2D/party-principal/actions/workflows/publish.yml)
 
 Manage social/gaming party systems in JavaScript
 
