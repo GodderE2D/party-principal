@@ -27,7 +27,7 @@ jobs:
         run: 'npm version ${{ github.event.release.tag_name }} -m "chore: bump version to %s"'
 
       - name: Publish to npm
-        run: yarn publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
