@@ -1,0 +1,16 @@
+# Ignore all files except directories
+*
+!*/
+
+# Allow certain files to be published
+!dist/*
+!LICENSE
+!package.json
+!README.md
+!yarn.lock
+
+# Disallow other directories
+.github/
+.yarn/
+node_modules/
+src/
