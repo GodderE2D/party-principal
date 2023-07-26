@@ -6,7 +6,7 @@ Manage social/gaming party systems in JavaScript
 
 Install the package using your favourite package manager.
 
-```js
+```sh
 npm install party-principal
 ```
 
