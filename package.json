@@ -1,0 +1,50 @@
+{
+  "packageManager": "yarn@1.22.19",
+  "name": "party-principal",
+  "description": "Manage social/gaming party systems in JavaScript",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "test": "tsx ./test.ts",
+    "lint": "eslint --fix .",
+    "lint:check": "eslint .",
+    "format": "prettier .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GodderE2D/party-principal.git"
+  },
+  "keywords": [
+    "party",
+    "principal",
+    "manager",
+    "game",
+    "gaming",
+    "social"
+  ],
+  "author": "GodderE2D <goddere2d@modslides.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GodderE2D/party-principal/issues"
+  },
+  "homepage": "https://github.com/GodderE2D/party-principal#readme",
+  "dependencies": {
+    "@discordjs/collection": "^1.5.1",
+    "tiny-typed-emitter": "^2.1.0"
+  },
+  "devDependencies": {
+    "@sapphire/ts-config": "^4.0.1",
+    "@types/node": "^20.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
+}
