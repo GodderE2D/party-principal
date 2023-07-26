@@ -24,10 +24,7 @@ jobs:
       - run: git config --global user.name "github-actions"
 
       - name: Version package
-        run: "yarn version --new-version ${{ github.event.release.tag_name }}"
-
-      - name: Commit version change
-        run: 'git commit -am "chore: bump version to ${{ github.event.release.tag_name }}"'
+        run: 'npm version ${{ github.event.release.tag_name }} -m "chore: bump version to %s"'
 
       - name: Publish to npm
         run: yarn publish
