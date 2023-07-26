@@ -28,6 +28,6 @@ export class User {
   }
 
   public setMeta(meta: UserMeta) {
-    meta = meta;
+    this.meta = meta;
   }
 }

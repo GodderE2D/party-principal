@@ -53,7 +53,7 @@ export class Invite {
   }
 
   public setMeta(meta: InviteMeta) {
-    meta = meta;
+    this.meta = meta;
   }
 
   public accept() {

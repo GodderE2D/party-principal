@@ -3,7 +3,7 @@ import { PartyClient } from ".";
 const client = new PartyClient();
 
 // Register users
-const [flutterUser, _, dashUser] = client.users.register([{ id: "flutter" }, { id: "twilight" }, { id: "dash" }]);
+const [flutterUser, , dashUser] = client.users.register([{ id: "flutter" }, { id: "twilight" }, { id: "dash" }]);
 
 // Create a party
 const party = client.parties.create({ members: [flutterUser] });

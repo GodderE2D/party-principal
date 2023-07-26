@@ -34,7 +34,7 @@ export class Party {
   public client: PartyClient;
 
   public setMeta(meta: UserMeta) {
-    meta = meta;
+    this.meta = meta;
   }
 
   public transferTo(member: PartyMember) {
