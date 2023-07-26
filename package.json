@@ -2,7 +2,7 @@
   "packageManager": "yarn@1.22.19",
   "name": "party-principal",
   "description": "Manage social/gaming party systems in JavaScript",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup",
