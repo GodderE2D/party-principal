@@ -86,6 +86,9 @@ Some managers offer `.delete()` overrides which can take in the structure its ma
 
 ```js
 const user = client.users.get("flutter");
+
+client.users.delete(user);
+// or
 client.users.delete("flutter");
 ```
 
@@ -114,7 +117,7 @@ Adds user(s) to the party.
 
 Can be accessed through `User.invites`.
 
-#### `.create(options: InviteOptions`
+#### `.create(options: InviteOptions)`
 
 Creates an invite.
 
@@ -295,43 +298,43 @@ Sets the user's metadata.
 
 `PartyClient` exposes a Node.js `EventEmitter`. Listen to an event using `.on("eventName", (...params) => ...)`.
 
-#### `.on("partyCreate")` (`party: Party`)`
+#### `.on("partyCreate")` (`party: Party`)
 
 Envoked when a party is created.
 
-#### `.on("partyDelete")` (`party: Party`)`
+#### `.on("partyDelete")` (`party: Party`)
 
 Envoked when a party is deleted.
 
-#### `.on("partyMemberJoin")` (`member: PartyMember`)`
+#### `.on("partyMemberJoin")` (`member: PartyMember`)
 
 Envoked when a party member joins a party.
 
-#### `.on("partyMemberLeave")` (`member: PartyMember`)`
+#### `.on("partyMemberLeave")` (`member: PartyMember`)
 
 Envoked when a party member leaves a party.
 
-#### `.on("partyMemberKick")` (`member: PartyMember, by: PartyMember`)`
+#### `.on("partyMemberKick")` (`member: PartyMember, by: PartyMember`)
 
 Envoked whenever a party member is kicked from a party.
 
 Please note that `member: PartyMember` will not be an actual member anymore and any methods on it should not be called.
 
-#### `.on("partyMemberPromote")` (`member: PartyMember, by: PartyMember`)`
+#### `.on("partyMemberPromote")` (`member: PartyMember, by: PartyMember`)
 
 Envoked whenever a party member promotes another member.
 
 Please note that `member: PartyMember` will not be an actual member anymore and any methods on it should not be called.
 
-#### `.on("inviteCreate")` (`invite: Invite`)`
+#### `.on("inviteCreate")` (`invite: Invite`)
 
 Envoked when an invite is created.
 
-#### `.on("inviteUse")` (`invite: Invite`)`
+#### `.on("inviteUse")` (`invite: Invite`)
 
 Envoked when an invite is used.
 
-#### `.on("inviteDelete")` (`invite: Invite`)`
+#### `.on("inviteDelete")` (`invite: Invite`)
 
 Envoked when an invite is deleted, such as when it has been expired, used, or manually deleted.
 
