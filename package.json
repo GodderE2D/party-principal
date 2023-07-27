@@ -2,7 +2,7 @@
   "packageManager": "yarn@1.22.19",
   "name": "party-principal",
   "description": "Manage social/gaming party systems in JavaScript",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
